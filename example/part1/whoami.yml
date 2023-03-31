@@ -1,4 +1,5 @@
 - hosts: server
+  become: true
   tasks:
     - name: Print the actual user
       command: whoami
